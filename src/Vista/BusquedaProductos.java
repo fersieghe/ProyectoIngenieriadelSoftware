@@ -50,7 +50,7 @@ public class BusquedaProductos extends javax.swing.JFrame {
         LineaBusquedaTXT = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        CategoriaLbl = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         IconoP1 = new javax.swing.JLabel();
         TituloP1 = new javax.swing.JLabel();
@@ -78,10 +78,6 @@ public class BusquedaProductos extends javax.swing.JFrame {
         TituloRegistro.setFont(new java.awt.Font("Times New Roman", 2, 48)); // NOI18N
         TituloRegistro.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.png"))); // NOI18N
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\Desktop\\ing.proyecto\\Proyecto Ingenieria\\ShopMe Data\\home.png")); // NOI18N
-
         jLabel3.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Iniciar Sesión");
@@ -92,8 +88,6 @@ public class BusquedaProductos extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Registrate");
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cart2.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -150,9 +144,7 @@ public class BusquedaProductos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buscar.jpg.png"))); // NOI18N
-
-        jLabel6.setText("Categorias");
+        CategoriaLbl.setText("Categorias");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -327,7 +319,7 @@ public class BusquedaProductos extends javax.swing.JFrame {
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGap(174, 174, 174)
-                        .addComponent(jLabel6)
+                        .addComponent(CategoriaLbl)
                         .addGap(18, 18, 18)
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -368,7 +360,7 @@ public class BusquedaProductos extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(LineaBusquedaTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel6)
+                        .addComponent(CategoriaLbl)
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(34, 34, 34)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -443,6 +435,7 @@ public class BusquedaProductos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel CantidadP1;
+    private javax.swing.JLabel CategoriaLbl;
     private javax.swing.JLabel CntLbl;
     private javax.swing.JLabel IconoP1;
     private javax.swing.JTextField LineaBusquedaTXT;
@@ -457,7 +450,6 @@ public class BusquedaProductos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

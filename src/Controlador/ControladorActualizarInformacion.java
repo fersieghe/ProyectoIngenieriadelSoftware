@@ -92,10 +92,6 @@ public class ControladorActualizarInformacion {
 				return ("ActualizacionCompleta");
 			}
 			
-			
-		
-
-
 public static void agregarMetodoPago (String metodoPago) {
 
     //Agrega en el TXT el metodo de pago con la cedula del cliente que esta en la sesion actual

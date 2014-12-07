@@ -8,61 +8,76 @@ package Modelo;
 import java.util.Date;
 
 /**
- *
- * @author fersieghe
+ * @author Estefania Baldini
+ * @author Abel Márquez
  */
 public class Usuario {
     
-    private static String nombre, apellido, cedula, username, email, direccion, password;
+    private static String nombre, apellido, cedula, username, email, direccion, password, rol;
     private Date DoB;
-   
 
-    public String getNombre() {
+    public static String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public static void setNombre(String nombre) {
+        Usuario.nombre = nombre;
     }
 
-    public String getApellido() {
+    public static String getApellido() {
         return apellido;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public static void setApellido(String apellido) {
+        Usuario.apellido = apellido;
     }
 
     public static String getCedula() {
         return cedula;
     }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public static void setCedula(String cedula) {
+        Usuario.cedula = cedula;
     }
 
-    public String getUsername() {
+    public static String getUsername() {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public static void setUsername(String username) {
+        Usuario.username = username;
     }
 
-    public String getEmail() {
+    public static String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public static void setEmail(String email) {
+        Usuario.email = email;
     }
 
-    public String getDireccion() {
+    public static String getDireccion() {
         return direccion;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public static void setDireccion(String direccion) {
+        Usuario.direccion = direccion;
+    }
+
+    public static String getPassword() {
+        return password;
+    }
+
+    public static void setPassword(String password) {
+        Usuario.password = password;
+    }
+
+    public static String getRol() {
+        return rol;
+    }
+
+    public static void setRol(String rol) {
+        Usuario.rol = rol;
     }
 
     public Date getDoB() {
@@ -72,18 +87,5 @@ public class Usuario {
     public void setDoB(Date DoB) {
         this.DoB = DoB;
     }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-
-    
-    
-    
-    
+   
 }

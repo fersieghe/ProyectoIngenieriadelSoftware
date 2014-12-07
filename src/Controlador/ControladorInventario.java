@@ -9,7 +9,7 @@ import Modelo.ModeloInventario;
 import javax.swing.JComboBox;
 
 /**
- *
+ * @author Estefania Baldini
  * @author Abel Márquez
  */
 

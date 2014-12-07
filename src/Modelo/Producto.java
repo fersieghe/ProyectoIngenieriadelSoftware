@@ -10,7 +10,7 @@ public class Producto {
     private String nombre;
     private String categoria;
     private int cantidad;
-    private boolean estado;
+    private String estado;
     private String descripcion;
     //IMAGEN DE PRODUCTO ?
 
@@ -38,11 +38,11 @@ public class Producto {
         this.cantidad = cantidad;
     }
 
-    public boolean isEstado() {
+    public String isEstado() {
         return estado;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
 

@@ -1,5 +1,6 @@
 package Vista;
 
+import com.toedter.calendar.JCalendar;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -22,6 +23,7 @@ public class VentanaBase extends JFrame {
     private JFrame  fatherWindow;
     private boolean isFatherWindowHide;
     private boolean isFatherWindowDisable;
+    protected JCalendar jCalendar1;
     
     
     /**

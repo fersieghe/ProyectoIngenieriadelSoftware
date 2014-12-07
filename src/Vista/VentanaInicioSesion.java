@@ -41,8 +41,8 @@ public class VentanaInicioSesion extends VentanaBase {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         EtiquetaError1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        CancelarBtn = new javax.swing.JButton();
+        InicioSesionBtn = new javax.swing.JButton();
 
         EtiquetaError.setText("*EtiquetaERROR*");
 
@@ -50,10 +50,6 @@ public class VentanaInicioSesion extends VentanaBase {
         setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 204));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.png"))); // NOI18N
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/home3.png"))); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -105,17 +101,17 @@ public class VentanaInicioSesion extends VentanaBase {
 
         EtiquetaError1.setText("*EtiquetaERROR*");
 
-        jButton1.setText("Cancelar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        CancelarBtn.setText("Cancelar");
+        CancelarBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                CancelarBtnActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Iniciar Sesión");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        InicioSesionBtn.setText("Iniciar Sesión");
+        InicioSesionBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                InicioSesionBtnActionPerformed(evt);
             }
         });
 
@@ -126,9 +122,9 @@ public class VentanaInicioSesion extends VentanaBase {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addComponent(jButton1)
+                .addComponent(CancelarBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(InicioSesionBtn)
                 .addGap(50, 50, 50))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(37, Short.MAX_VALUE)
@@ -159,8 +155,8 @@ public class VentanaInicioSesion extends VentanaBase {
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(CancelarBtn)
+                    .addComponent(InicioSesionBtn))
                 .addGap(38, 38, 38))
         );
 
@@ -175,13 +171,13 @@ public class VentanaInicioSesion extends VentanaBase {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void CancelarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_CancelarBtnActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void InicioSesionBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioSesionBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_InicioSesionBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -219,10 +215,10 @@ public class VentanaInicioSesion extends VentanaBase {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CancelarBtn;
     private javax.swing.JLabel EtiquetaError;
     private javax.swing.JLabel EtiquetaError1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton InicioSesionBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

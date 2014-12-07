@@ -8,7 +8,7 @@ package Modelo;
 import java.io.File;
 
 /**
- *
+ * @author Estefania Baldini
  * @author Abel Márquez
  */
 public class ModeloInventario {
@@ -22,9 +22,14 @@ public class ModeloInventario {
     
                                         String cadenaRegistro;
                 
-                                                cadenaRegistro = nombre + ";" + precio + ";" + descripcion + ";" + categoria + ";" + cant;
+                                                cadenaRegistro = nombre + ";" + precio + ";" + descripcion + ";" + categoria + ";" + cant + ";" + "Disponible";
 
                          guardar.guardarEnTXT(Ffichero, cadenaRegistro);
+    }
+    
+     public static void actualizarProductos(String nombre, int precio, String descripcion, String categoria, int cant) {
+        
+             
     }
     
 }

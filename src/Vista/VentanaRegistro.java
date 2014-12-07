@@ -79,11 +79,6 @@ public class VentanaRegistro extends VentanaBase {
         EtiquetaComprobacion.setText("Comprobacion Contraseña");
 
         VECombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "V-", "E-" }));
-        VECombo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VEComboActionPerformed(evt);
-            }
-        });
 
         BotonRegistrar.setText("Registrar");
         BotonRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -103,10 +98,6 @@ public class VentanaRegistro extends VentanaBase {
         TituloRegistro.setFont(new java.awt.Font("Times New Roman", 2, 48)); // NOI18N
         TituloRegistro.setForeground(new java.awt.Color(255, 255, 255));
         TituloRegistro.setText("Registrar");
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.png"))); // NOI18N
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/home3.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -215,7 +206,6 @@ public class VentanaRegistro extends VentanaBase {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
                 .addComponent(EtiquetaError)
-                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(3, 3, 3)
@@ -262,10 +252,6 @@ public class VentanaRegistro extends VentanaBase {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void VEComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VEComboActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_VEComboActionPerformed
 
     private void BotonRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonRegistrarActionPerformed
         JTextField DireccionTextField = null;

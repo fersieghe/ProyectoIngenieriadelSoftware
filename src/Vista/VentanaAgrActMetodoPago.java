@@ -6,18 +6,19 @@
 package Vista;
 
 import Controlador.ControladorActualizarInformacion;
+import Modelo.MetodoPago;
 import Modelo.Usuario;
 
 /**
- *
- * @author fersieghe
+ * @author Estefania Baldini
+ * @author Abel Márquez
  */
-public class VentanaAgregarMetodoPago extends VentanaBase {
+public class VentanaAgrActMetodoPago extends VentanaBase {
 
     /**
      * Creates new form VentanaAgregarMetodoPago
      */
-    public VentanaAgregarMetodoPago() {
+    public VentanaAgrActMetodoPago() {
         initComponents();
     }
 
@@ -148,6 +149,11 @@ public class VentanaAgregarMetodoPago extends VentanaBase {
         String metodoPago  = Usuario.getCedula() + " " + NumTarjetaTXT.getText() + " " + MesVencimiento.getSelectedItem() + " " + AnioVencimiento.getSelectedItem() 
                                 + " " + CodSeguridadTXT.getText() + " " + MarcaComercialBox.getSelectedItem() + " " + "Y" ;
         
+        MetodoPago tdc = new MetodoPago();
+        tdc.setMarcaComercial(MarcaComercialBox.getSelectedItem().toString());
+        tdc.setNumeroTDC(NumTarjetaTXT.getText());
+        tdc.setFechaVencimientoTDC(MesVencimiento.getSelectedItem().toString() + "-" + AnioVencimiento.getSelectedItem().toString());
+        tdc.setCodigoSeguridadTDC(Integer.parseInt(CodSeguridadTXT.getText()));
         ControladorActualizarInformacion.agregarMetodoPago(metodoPago);
     }//GEN-LAST:event_AgregarMetodoPagoBtnActionPerformed
 
@@ -168,20 +174,21 @@ public class VentanaAgregarMetodoPago extends VentanaBase {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaAgregarMetodoPago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAgrActMetodoPago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaAgregarMetodoPago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAgrActMetodoPago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaAgregarMetodoPago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAgrActMetodoPago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaAgregarMetodoPago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAgrActMetodoPago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VentanaAgregarMetodoPago().setVisible(true);
+                new VentanaAgrActMetodoPago().setVisible(true);
             }
         });
     }
